@@ -22,7 +22,9 @@ public class PromotionDAOImpl implements PromotionDAO {
 
 	@Override
 	public List<PromotionDTO> promotionList(Connection con) throws SQLException {
-		String sql = "";
+		String sql = " select P_title, IMGVD_PATH , i.P_CODE " + 
+				" from promotion p join PROMOTION_IMG i on p.P_CODE = i.P_CODE " + 
+				" where (REGEXP_LIKE(i.P_CODE,'^P') and TO_CHAR(SYSDATE, 'MM/dd') <= TO_CHAR(P_ENDDATE, 'MM/dd')) OR i.P_CODE LIKE 'E%';";
 		
 		ArrayList<PromotionDTO> list = null;
 		PreparedStatement pstmt = null;
