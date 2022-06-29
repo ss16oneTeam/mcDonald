@@ -1,9 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<html lang="ko">
-<head>
-
+<html lang="ko"><head>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-4RDYNH3QTJ&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://connect.facebook.net/signals/config/2808577885918545?v=2.9.62&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W5TBQX4"></script><script>
 	if(self.location.protocol == "http:" && self.location.hostname.indexOf('mcdonalds.co.kr') != -1) {
     	self.location.href = self.location.href.replace('http',"https");
@@ -388,21 +384,9 @@
 					<div class="inner">
 						<h2 class="titMain">McDonald's LIVE</h2>
 						<ul class="whatsNew" id="menuList">
-							<c:if test="${empty Plist }"><h3>데이터 없음</h3></c:if>
-							<c:if test="${not empty Plist }">
-								<c:forEach items="${Plist }" var="dto">
-									<li>
-										<a href="#" onclick="goDetail(this)" data-seq="137" data="137,N,https://www.mcdonalds.co.kr/kor/promotion/detail.do?seq=369&amp;utm_medium=Corp_site&amp;utm_source=Main_cardblock&amp;utm_campaign=2022_McCrispy">
-											<div class="tmb"><img src="${dto.IMGVD_PATH }" alt="${dto.p_title }"></div>
-											<div class="con">
-												<strong class="tit">${dto.p_title }</strong>
-											</div>
-										</a>
-									</li>
-								</c:forEach>
-							</c:if>
-						<!--동적쿼리-->
-<!-- <li><a href="#" onclick="goDetail(this)" data-seq="137" data="137,N,https://www.mcdonalds.co.kr/kor/promotion/detail.do?seq=369&amp;utm_medium=Corp_site&amp;utm_source=Main_cardblock&amp;utm_campaign=2022_McCrispy">
+							
+						
+<li><a href="#" onclick="goDetail(this)" data-seq="137" data="137,N,https://www.mcdonalds.co.kr/kor/promotion/detail.do?seq=369&amp;utm_medium=Corp_site&amp;utm_source=Main_cardblock&amp;utm_campaign=2022_McCrispy">
 								<div class="tmb"><img src="/upload/main/card/1653467599860.png" alt="세상 처음 맛보는 치킨버거, 맥크리스피™"></div>
 								<div class="con">
 									<strong class="tit">겉바속촉 100% 통닭다리살!<br>
@@ -540,7 +524,7 @@
 								<div class="con">
 									<strong class="tit">귀하의 토지,건물에 맥도날드를 유치 하세요!</strong>
 								</div>
-							</a></li> -->
+							</a></li>
 </ul>
 						<div class="btnMore" id="btnMore" style="display: none;">
 							<a href="javascript:more();" class="more" title="더보기">더보기</a>
