@@ -36,6 +36,8 @@
 	<dispatcher>REQUEST</dispatcher>
 </filter-mapping>
 
+
+
 <servlet>
 	<servlet-name>dispatcher</servlet-name>
 	<servlet-class>mc.controller.DispatcherServlet</servlet-class>
@@ -50,8 +52,6 @@
 	<url-pattern>*.do</url-pattern>
 </servlet-mapping>
   
-  
-
   
   
   
