@@ -17,8 +17,8 @@ public class DBconn {
 			// JDBC Driver	ojdbc6.jar
 			String className = "oracle.jdbc.driver.OracleDriver" ;
 			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-			String user = "SCOTT";
-			String password = "tiger";
+			String user = "Mc_donald";
+			String password = "mc1234";
 			try {
 				Class.forName(className);
 				connection = DriverManager.getConnection(url,user,password);
